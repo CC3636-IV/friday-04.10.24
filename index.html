@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body></body>
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Gjøremåls Liste</h1>
+  </header>
+
+  <main>
+    <!-- Her er input form html -->
+    <form id="user-input">
+      <label for="todo">Gjøremål</label>
+      <input type="text" name="todo" id="todo" />
+
+      <button type="submit">Legg Til</button>
+    </form>
+
+    <!-- Gjøremåls listen -->
+    <ul id="todo-list">
+      <!-- eksempel html gjøremåls kort -->
+      <li>
+        <h2>Mat Haiene</h2>
+      </li>
+    </ul>
+
+  </main>
+</body>
+
 </html>
