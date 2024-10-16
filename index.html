@@ -5,25 +5,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ButtonStyle.css" />
     <script type="module" src="script.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>Gjøremåls Liste</h1>
+      <h1 class="accentColor text-Color">Gjøremåls Liste</h1>
     </header>
 
     <main>
       <!-- Her er input form html -->
-      <form id="user-input">
-        <label for="todo">Gjøremål</label>
-        <input type="text" name="todo" id="todo" />
+      <form class="container" id="user-input">
+        <div class="Input-Form-Container raised">
+          <label class="accentColor Label-Box text-Color" for="todo"
+            >Gjøremål</label
+          >
+          <input type="text" name="todo" class="Input-Box" id="todo" />
 
-        <button type="submit">Legg Til</button>
+          <button type="submit" class="button hover:brighten active:sunken">
+            Legg Til
+          </button>
+        </div>
       </form>
 
       <!-- Gjøremåls listen -->
       <ul id="todo-list"></ul>
     </main>
+    <footer>
+      <div class="footerhead">
+        <h2>Footer</h2>
+        <div class="footerphoto">
+          <h3>"Insert Photo here"</h3>
+        </div>
+      </div>
+      <div class="footerdescription">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea
+          maxime ex corrupti quidem sint laudantium quibusdam, illo iste
+          assumenda adipisci quas reprehenderit iure consectetur, quisquam
+          reiciendis unde animi placeat.
+        </h3>
+      </div>
+      <div class="footerdescription movingD2">
+        <h3>
+          Sollicitudin malesuada fames curae conubia porttitor neque. Quisque
+          urna nibh placerat vivamus dolor arcu eros. Vel magnis platea
+          dignissim habitant nam. Velit penatibus euismod rutrum class nascetur
+          rhoncus mollis
+        </h3>
+      </div>
+    </footer>
   </body>
 </html>
